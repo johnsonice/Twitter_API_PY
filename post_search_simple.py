@@ -103,9 +103,9 @@ if __name__ == "__main__":
             else:
                 df[lk] = 0 
         ## drop original columns 
-        for k in ks:
-            if k in matched_cols:
-                df.drop([k],axis=1)
+        #for k in ks:
+        #    if k in matched_cols:
+        #        df.drop([k],axis=1)
                 
         ## aggregate statistics and filter 
         climate_columns = [k for k in keywords_dict['Climate_Keys'] if k in matched_cols + logical_keys]
